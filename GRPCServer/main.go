@@ -1,7 +1,7 @@
 package main
 
 import (
-	pb "gitee.com/fanlv/GRPCServer/proto"
+	pb "github.com/fanlv/gRPCDemo/GRPCServer/proto"
 	"net"
 	"log"
 	"google.golang.org/grpc"
