@@ -39,7 +39,7 @@ int main(int argc, char * argv[]) {
       [userClient loginWithRequest:req handler:^(LoginResponse * _Nullable response, NSError * _Nullable error) {
           if (!error) {
               if (response.baseResp.code == 0) {
-                  NSLog(@"%@",response.user.name);
+                  NSLog(@"收到服务器段数据返回 ： %@",response.user.name);
               }else{
                   NSLog(@"error :%@",response.baseResp.msg);
               }
